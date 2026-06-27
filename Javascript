@@ -45,3 +45,26 @@ document.querySelector(".prev").onclick = prevSlide;
 
 // Otomatis berganti setiap 4 detik
 setInterval(nextSlide,4000);
+function cariProduk(){
+
+    let input = document.getElementById("searchInput").value.toLowerCase();
+
+    let produk = document.querySelectorAll(".produk-item");
+
+    produk.forEach(function(item){
+
+        let nama = item.querySelector("h3").textContent.toLowerCase();
+
+        if(nama.includes(input)){
+
+            item.style.display="block";
+
+        }else{
+
+            item.style.display="none";
+
+        }
+
+    });
+
+}
