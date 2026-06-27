@@ -1,0 +1,47 @@
+const slides = document.querySelectorAll(".slide");
+
+let index = 0;
+
+function tampilSlide(n){
+
+    slides.forEach(slide=>{
+        slide.classList.remove("active");
+    });
+
+    slides[n].classList.add("active");
+}
+
+function nextSlide(){
+
+    index++;
+
+    if(index >= slides.length){
+
+        index = 0;
+
+    }
+
+    tampilSlide(index);
+
+}
+
+function prevSlide(){
+
+    index--;
+
+    if(index < 0){
+
+        index = slides.length - 1;
+
+    }
+
+    tampilSlide(index);
+
+}
+
+document.querySelector(".next").onclick = nextSlide;
+
+document.querySelector(".prev").onclick = prevSlide;
+
+// Otomatis berganti setiap 4 detik
+setInterval(nextSlide,4000);
