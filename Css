@@ -162,4 +162,55 @@ footer{
 .prev:hover,
 .next:hover{
     background:#d60000;
+}/* ========================= */
+/* Responsive HP */
+/* ========================= */
+
+@media (max-width:768px){
+
+    .produk{
+        width:95%;
+    }
+
+    .produk-grid{
+        grid-template-columns:repeat(2,1fr);
+        gap:12px;
+    }
+
+    .card img{
+        height:140px;
+    }
+
+    .card h3{
+        font-size:14px;
+        padding:10px;
+    }
+
+    .harga-lama{
+        font-size:12px;
+        padding:0 10px;
+    }
+
+    .harga-baru{
+        font-size:18px;
+        padding:5px 10px 10px;
+    }
+
+    .btn-beli{
+        margin:0 10px 12px;
+        padding:10px;
+        font-size:14px;
+    }
+
+    .diskon{
+        font-size:10px;
+        padding:4px 8px;
+        top:8px;
+        left:8px;
+    }
+
+    .judul-produk h2{
+        font-size:22px;
+    }
+
 }
