@@ -244,3 +244,48 @@ footer{
     flex:1;
     margin:0;
 }
+/* ========================= */
+/* Tombol Detail & Beli */
+/* ========================= */
+
+.tombol-produk{
+    display:flex;
+    gap:10px;
+    padding:0 18px 20px;
+}
+
+.btn-detail,
+.btn-beli{
+    flex:1;
+    text-align:center;
+    text-decoration:none;
+    padding:12px;
+    border-radius:8px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+/* Tombol Detail */
+
+.btn-detail{
+    background:#ffffff;
+    color:#d60000;
+    border:2px solid #d60000;
+}
+
+.btn-detail:hover{
+    background:#d60000;
+    color:#ffffff;
+}
+
+/* Tombol Beli */
+
+.btn-beli{
+    background:#d60000;
+    color:#ffffff;
+    border:2px solid #d60000;
+}
+
+.btn-beli:hover{
+    background:#b30000;
+}
