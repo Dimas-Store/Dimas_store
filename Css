@@ -426,3 +426,26 @@ footer{
 .deskripsi li{
     margin-bottom:10px;
 }
+/* ========================= */
+/* PRODUK TERKAIT */
+/* ========================= */
+
+.produk-terkait{
+    width:90%;
+    margin:70px auto;
+}
+
+.produk-terkait h2{
+    text-align:center;
+    margin-bottom:30px;
+    color:#d60000;
+    font-size:30px;
+}
+
+@media(max-width:768px){
+
+.produk-terkait{
+    width:95%;
+}
+
+}
