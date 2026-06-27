@@ -214,3 +214,33 @@ footer{
     }
 
 }
+/* Tombol Produk */
+
+.tombol-produk{
+    display:flex;
+    gap:10px;
+    padding:0 18px 20px;
+}
+
+.btn-detail{
+    flex:1;
+    text-align:center;
+    text-decoration:none;
+    background:#ffffff;
+    color:#d60000;
+    border:2px solid #d60000;
+    padding:12px;
+    border-radius:10px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn-detail:hover{
+    background:#d60000;
+    color:#fff;
+}
+
+.btn-beli{
+    flex:1;
+    margin:0;
+}
