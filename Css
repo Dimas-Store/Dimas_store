@@ -289,3 +289,99 @@ footer{
 .btn-beli:hover{
     background:#b30000;
 }
+/* ========================= */
+/* HALAMAN DETAIL PRODUK */
+/* ========================= */
+
+.detail-produk{
+    width:90%;
+    margin:50px auto;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    align-items:flex-start;
+}
+
+.gambar-besar{
+    width:100%;
+    border-radius:12px;
+    border:1px solid #ddd;
+}
+
+.thumbnail{
+    margin-top:15px;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:10px;
+}
+
+.thumbnail img{
+    width:100%;
+    cursor:pointer;
+    border-radius:8px;
+    border:2px solid transparent;
+    transition:.3s;
+}
+
+.thumbnail img:hover{
+    border-color:#d60000;
+}
+
+.info-produk h1{
+    font-size:32px;
+    margin-bottom:20px;
+}
+
+.info-produk .harga-lama{
+    color:#888;
+    text-decoration:line-through;
+    font-size:20px;
+}
+
+.info-produk .harga-baru{
+    color:#d60000;
+    font-size:34px;
+    font-weight:bold;
+    margin:10px 0 20px;
+}
+
+.info-produk p{
+    font-size:17px;
+    line-height:1.8;
+}
+
+.info-produk .btn-beli{
+    display:inline-block;
+    margin-top:25px;
+    padding:15px 35px;
+    text-decoration:none;
+    background:#d60000;
+    color:#fff;
+    border-radius:10px;
+    font-weight:bold;
+}
+
+/* ========================= */
+/* DETAIL RESPONSIVE HP */
+/* ========================= */
+
+@media(max-width:768px){
+
+.detail-produk{
+    width:95%;
+    grid-template-columns:1fr;
+}
+
+.info-produk h1{
+    font-size:24px;
+}
+
+.info-produk .harga-baru{
+    font-size:28px;
+}
+
+.thumbnail{
+    grid-template-columns:repeat(3,1fr);
+}
+
+}
