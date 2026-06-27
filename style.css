@@ -512,3 +512,29 @@ footer{
 .kembali a:hover{
     text-decoration:underline;
 }
+/* ========================= */
+/* SPESIFIKASI PRODUK */
+/* ========================= */
+
+.spesifikasi{
+    margin-top:25px;
+    padding:20px;
+    background:#f8f8f8;
+    border-radius:10px;
+}
+
+.spesifikasi h3{
+    color:#d60000;
+    margin-bottom:15px;
+}
+
+.spesifikasi table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+.spesifikasi td{
+    padding:8px 0;
+    font-size:16px;
+    color:#333;
+}
