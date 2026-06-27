@@ -68,3 +68,12 @@ function cariProduk(){
     });
 
 }
+/* ========================= */
+/* GANTI FOTO PRODUK */
+/* ========================= */
+
+function gantiGambar(gambar){
+
+    document.getElementById("gambarUtama").src = gambar.src;
+
+}
