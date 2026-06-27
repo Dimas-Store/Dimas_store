@@ -493,3 +493,22 @@ footer{
     }
 
 }
+/* ========================= */
+/* TOMBOL KEMBALI */
+/* ========================= */
+
+.kembali{
+    width:90%;
+    margin:20px auto;
+}
+
+.kembali a{
+    text-decoration:none;
+    color:#d60000;
+    font-weight:bold;
+    font-size:18px;
+}
+
+.kembali a:hover{
+    text-decoration:underline;
+}
