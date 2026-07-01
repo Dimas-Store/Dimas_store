@@ -1,1 +1,284 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
 
+body{
+    background:#f5f5f5;
+    color:#333;
+}
+
+.top-bar{
+    width:100%;
+    background:#d60000;
+    color:#fff;
+    text-align:center;
+    padding:10px;
+    font-size:14px;
+    font-weight:500;
+}
+
+.logo-area{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:15px;
+    background:#fff;
+    padding:20px 15px;
+}
+
+.logo img{
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+.nama-toko h1{
+    font-size:24px;
+    color:#d60000;
+}
+
+.nama-toko p{
+    font-size:13px;
+    color:#777;
+}
+
+.search-box{
+    display:flex;
+    padding:15px;
+    background:#fff;
+}
+
+.search-box input{
+    flex:1;
+    height:45px;
+    border:1px solid #ddd;
+    border-radius:6px 0 0 6px;
+    padding:0 15px;
+    outline:none;
+    font-size:15px;
+}
+
+.search-box button{
+    width:90px;
+    border:none;
+    background:#d60000;
+    color:#fff;
+    font-size:15px;
+    border-radius:0 6px 6px 0;
+    cursor:pointer;
+}
+.slider{
+    width:100%;
+    background:#fff;
+    padding:15px;
+    position:relative;
+}
+
+.slides{
+    width:100%;
+    overflow:hidden;
+    border-radius:10px;
+}
+
+.slide{
+    display:none;
+}
+
+.slide.active{
+    display:block;
+}
+
+.slide img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+.prev,
+.next{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    width:40px;
+    height:40px;
+    border:none;
+    border-radius:50%;
+    background:rgba(0,0,0,.5);
+    color:#fff;
+    font-size:20px;
+    cursor:pointer;
+}
+
+.prev{
+    left:25px;
+}
+
+.next{
+    right:25px;
+}
+
+.dots{
+    display:flex;
+    justify-content:center;
+    gap:8px;
+    margin-top:10px;
+}
+
+.dot{
+    width:10px;
+    height:10px;
+    background:#ccc;
+    border-radius:50%;
+}
+
+.dot.active{
+    background:#d60000;
+}
+
+.produk{
+    padding:15px;
+}
+
+.judul-produk{
+    margin-bottom:15px;
+}
+
+.judul-produk h2{
+    font-size:22px;
+    color:#222;
+}
+
+.produk-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:15px;
+}
+
+.produk-card{
+    background:#fff;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 2px 8px rgba(0,0,0,.08);
+}
+
+.produk-card img{
+    width:100%;
+    aspect-ratio:1/1;
+    object-fit:cover;
+}
+
+.produk-card h3{
+    font-size:15px;
+    padding:10px;
+}
+
+.harga{
+    color:#d60000;
+    font-size:16px;
+    font-weight:600;
+    padding:0 10px 10px;
+}
+
+.produk-card button{
+    width:calc(100% - 20px);
+    margin:0 10px 10px;
+    height:40px;
+    border:none;
+    border-radius:6px;
+    background:#d60000;
+    color:#fff;
+    cursor:pointer;
+}
+.footer-box{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:10px;
+    background:#ffffff;
+    padding:20px 15px;
+    margin-top:20px;
+}
+
+.footer-item{
+    flex:1;
+    text-align:center;
+}
+
+.footer-item img{
+    width:45px;
+    height:45px;
+    object-fit:contain;
+    margin-bottom:8px;
+}
+
+.footer-item p{
+    font-size:13px;
+    color:#444;
+    font-weight:500;
+}
+
+.tentang{
+    background:#ffffff;
+    margin-top:20px;
+    padding:20px 15px;
+}
+
+.tentang h2{
+    font-size:22px;
+    color:#d60000;
+    margin-bottom:12px;
+}
+
+.tentang p{
+    font-size:14px;
+    line-height:1.8;
+    color:#555;
+    text-align:justify;
+}
+
+@media (max-width:480px){
+
+    .logo img{
+        width:60px;
+        height:60px;
+    }
+
+    .nama-toko h1{
+        font-size:20px;
+    }
+
+    .nama-toko p{
+        font-size:12px;
+    }
+
+    .slide img{
+        height:180px;
+    }
+
+    .produk-grid{
+        grid-template-columns:repeat(2,1fr);
+        gap:12px;
+    }
+
+    .produk-card h3{
+        font-size:14px;
+    }
+
+    .harga{
+        font-size:15px;
+    }
+
+    .produk-card button{
+        height:38px;
+        font-size:14px;
+    }
+
+    .footer-item p{
+        font-size:12px;
+    }
+}
