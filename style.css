@@ -94,8 +94,8 @@ body{
 
 .slide img{
     width:100%;
-    height:auto;
-    display:block;
+    height:240px;
+    object-fit:cover;
     border-radius:10px;
 }
 }
