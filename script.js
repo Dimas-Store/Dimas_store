@@ -82,7 +82,6 @@ searchInput.addEventListener("keyup",()=>{
     });
 
 });
-<script>
 const nomorWA = "62895385145700";
 
 document.querySelectorAll(".btn-beli").forEach(function(button){
@@ -106,4 +105,3 @@ Mohon diproses ya. Terima kasih.`;
         window.open(url, "_blank");
     });
 });
-</script>
