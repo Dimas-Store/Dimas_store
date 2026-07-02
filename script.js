@@ -5,61 +5,39 @@ const next = document.querySelector(".next");
 
 let current = 0;
 
-function tampilSlide(index){
+if (slides.length > 0 && prev && next && dots.length > 0) {
 
-    slides.forEach((slide)=>{
-        slide.classList.remove("active");
-    });
+    function tampilSlide(index){
+        slides.forEach(slide => slide.classList.remove("active"));
+        dots.forEach(dot => dot.classList.remove("active"));
 
-    dots.forEach((dot)=>{
-        dot.classList.remove("active");
-    });
-
-    slides[index].classList.add("active");
-    dots[index].classList.add("active");
-}
-
-function slideBerikutnya(){
-
-    current++;
-
-    if(current >= slides.length){
-        current = 0;
+        slides[index].classList.add("active");
+        dots[index].classList.add("active");
     }
 
-    tampilSlide(current);
-}
-
-function slideSebelumnya(){
-
-    current--;
-
-    if(current < 0){
-        current = slides.length - 1;
-    }
-
-    tampilSlide(current);
-}
-
-next.addEventListener("click",slideBerikutnya);
-
-prev.addEventListener("click",slideSebelumnya);
-
-setInterval(()=>{
-    slideBerikutnya();
-},3000);
-
-dots.forEach((dot,index)=>{
-
-    dot.addEventListener("click",()=>{
-
-        current=index;
-
+    function slideBerikutnya(){
+        current = (current + 1) % slides.length;
         tampilSlide(current);
+    }
 
+    function slideSebelumnya(){
+        current = (current - 1 + slides.length) % slides.length;
+        tampilSlide(current);
+    }
+
+    next.addEventListener("click", slideBerikutnya);
+    prev.addEventListener("click", slideSebelumnya);
+
+    setInterval(slideBerikutnya, 3000);
+
+    dots.forEach((dot, index) => {
+        dot.addEventListener("click", () => {
+            current = index;
+            tampilSlide(current);
+        });
     });
 
-});
+}
 
 const searchInput=document.getElementById("searchInput");
 
