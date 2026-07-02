@@ -82,3 +82,28 @@ searchInput.addEventListener("keyup",()=>{
     });
 
 });
+<script>
+const nomorWA = "62895385145700";
+
+document.querySelectorAll(".btn-beli").forEach(function(button){
+    button.addEventListener("click", function(){
+
+        const card = this.closest(".produk-card");
+        const namaProduk = card.querySelector("h3").innerText;
+
+        const pesan =
+`Halo Dimas-store 👋
+
+Saya ingin memesan produk ini.
+
+🛒 Nama Produk : ${namaProduk}
+📦 Jumlah :
+📍 Alamat :
+
+Mohon diproses ya. Terima kasih.`;
+
+        const url = `https://wa.me/${nomorWA}?text=${encodeURIComponent(pesan)}`;
+        window.open(url, "_blank");
+    });
+});
+</script>
