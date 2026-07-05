@@ -16,12 +16,12 @@ body{
     background:#d60000;
     color:#fff;
     display:flex;
-    align-items:center;
     justify-content:center;
+    align-items:center;
     position:relative;
     font-size:14px;
     font-weight:500;
-}
+
 }
 
 .logo-area{
