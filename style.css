@@ -329,19 +329,19 @@ body{
     font-size: 36px !important;
 }
 .cart-btn{
-    position: fixed;
-    top: 46px;
-    right: 15px;
-    text-decoration: none;
-    font-size: 26px;
-    color: #fff !important;
-    z-index: 99999;
-
+    position:absolute;
+    right:15px;
+    top:48%;
+    transform:translateY(-50%);
+    text-decoration:none;
+    font-size:24px;
+    z-index:1000;
 }
 
 .cart-btn i{
-    color: #000 !important;
+    color:#fff !important;
 }
+
 .produk-btn{
     display:flex;
     gap:8px;
