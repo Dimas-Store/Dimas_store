@@ -12,12 +12,16 @@ body{
 
 .top-bar{
     width:100%;
+    height:50px;
     background:#d60000;
     color:#fff;
-    text-align:center;
-    padding:10px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:relative;
     font-size:14px;
     font-weight:500;
+}
 }
 
 .logo-area{
@@ -332,7 +336,7 @@ body{
     font-size: 26px;
     color: #fff !important;
     z-index: 99999;
-}
+
 }
 
 .cart-btn i{
