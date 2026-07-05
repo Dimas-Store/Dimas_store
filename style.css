@@ -307,3 +307,12 @@ body{
   50% { transform: translateY(-8px); }
   100% { transform: translateY(0); }
 }
+
+.home-btn {
+    color: #e60000;
+    font-size: 28px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
