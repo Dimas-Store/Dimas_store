@@ -325,14 +325,14 @@ body{
     font-size: 36px !important;
 }
 .cart-btn{
-    position: absolute;
-    top: 50%;
+    position: fixed;
+    top: 15px;
     right: 15px;
-    transform: translateY(-50%);
     text-decoration: none;
     font-size: 26px;
-    color: #000 !important;
-    z-index: 9999;
+    color: #fff !important;
+    z-index: 99999;
+}
 }
 
 .cart-btn i{
