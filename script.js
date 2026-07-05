@@ -83,3 +83,27 @@ Mohon diproses ya. Terima kasih.`;
         window.open(url, "_blank");
     });
 });
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+
+function simpanKeranjang() {
+    localStorage.setItem("cart", JSON.stringify(cart));
+}
+
+function tambahKeKeranjang(namaProduk, harga) {
+
+    const produk = cart.find(item => item.nama === namaProduk);
+
+    if (produk) {
+        produk.jumlah++;
+    } else {
+        cart.push({
+            nama: namaProduk,
+            harga: harga,
+            jumlah: 1
+        });
+    }
+
+    simpanKeranjang();
+
+    alert(namaProduk + " berhasil ditambahkan ke keranjang.");
+}
