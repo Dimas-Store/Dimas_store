@@ -195,14 +195,8 @@ body{
 }
 
 .produk-card button{
-    width:calc(100% - 20px);
-    margin:0 10px 10px;
-    height:40px;
-    border:none;
-    border-radius:6px;
-    background:#d60000;
-    color:#fff;
     cursor:pointer;
+}
 }
 .footer-box{
     display:flex;
@@ -283,10 +277,21 @@ body{
         font-size:15px;
     }
 
-    .produk-card button{
-        height:38px;
-        font-size:14px;
+    .btn-cart{
+        width:48px;
+        height:42px;
     }
+
+    .btn-beli{
+        height:42px;
+        font-size:12px;
+        font-weight:400;
+    }
+
+}
+    
+
+    
 
     .footer-item p{
         font-size:12px;
