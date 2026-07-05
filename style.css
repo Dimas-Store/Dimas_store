@@ -367,11 +367,10 @@ body{
 .btn-beli{
     flex:1;
     height:40px;
-    border:2px solid #d60000;
+    border:2px solid #d60000 !important;
     border-radius:6px;
-    background:#fff;
-    color:#d60000;
-    cursor:pointer;
+    background:#fff !important;
+    color:#d60000 !important;
     font-size:13px;
     font-weight:400;
 }
