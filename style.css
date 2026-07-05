@@ -67,13 +67,17 @@ body{
 }
 
 .search-box button{
-    width:90px;
+    width:55px;
     border:none;
     background:#d60000;
     color:#fff;
-    font-size:15px;
+    font-size:20px;
     border-radius:0 6px 6px 0;
     cursor:pointer;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
 }
 .slider{
     width:100%;
