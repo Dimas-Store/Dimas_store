@@ -308,11 +308,19 @@ body{
   100% { transform: translateY(0); }
 }
 
-.home-btn {
-    color: #e60000;
-    font-size: 28px;
-    text-decoration: none;
+.home-btn{
+    color: #e60000 !important;
+    font-size: 36px !important;
+    text-decoration: none !important;
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 45px;
+    height: 45px;
+    flex-shrink: 0;
+}
+
+.home-btn i{
+    color: #e60000 !important;
+    font-size: 36px !important;
 }
