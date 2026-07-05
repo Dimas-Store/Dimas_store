@@ -324,3 +324,20 @@ body{
     color: #e60000 !important;
     font-size: 36px !important;
 }
+header{
+    position: relative;
+}
+
+.cart-btn{
+    position: absolute;
+    top: 8px;
+    right: 15px;
+    color: #000;
+    text-decoration: none;
+    font-size: 32px;
+    z-index: 9999;
+}
+
+.cart-btn i{
+    color: #000;
+}
