@@ -338,3 +338,32 @@ body{
 .cart-btn i{
     color: #000 !important;
 }
+.produk-btn{
+    display:flex;
+    gap:8px;
+    padding:0 10px 10px;
+}
+
+.btn-cart{
+    width:45px;
+    height:40px;
+    border:none;
+    border-radius:6px;
+    background:#ffffff;
+    color:#d60000;
+    border:2px solid #d60000;
+    cursor:pointer;
+    font-size:18px;
+}
+
+.btn-beli{
+    flex:1;
+    height:40px;
+    border:none;
+    border-radius:6px;
+    background:#d60000;
+    color:#fff;
+    cursor:pointer;
+    font-size:14px;
+    font-weight:600;
+}
