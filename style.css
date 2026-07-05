@@ -197,7 +197,6 @@ body{
 .produk-card button{
     cursor:pointer;
 }
-}
 .footer-box{
     display:flex;
     justify-content:space-between;
@@ -286,8 +285,6 @@ body{
         height:42px;
         font-size:12px;
         font-weight:400;
-    }
-
 }
     
 
