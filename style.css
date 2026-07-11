@@ -406,3 +406,19 @@ body{
     width:25px;
     margin-right:6px;
 }
+.harga{
+    margin-top:8px;
+}
+
+.harga-lama{
+    color:#888;
+    text-decoration:line-through;
+    font-size:15px;
+    font-weight:500;
+}
+
+.harga-baru{
+    color:#e60000;
+    font-size:28px;
+    font-weight:700;
+}
