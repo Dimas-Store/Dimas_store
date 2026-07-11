@@ -411,14 +411,14 @@ body{
 }
 
 .harga-lama{
-    color:#888;
+    color:#999;
     text-decoration:line-through;
-    font-size:15px;
+    font-size:13px;
     font-weight:500;
 }
 
 .harga-baru{
-    color:#e60000;
-    font-size:28px;
+    color:#d60000;
+    font-size:16px;
     font-weight:700;
 }
