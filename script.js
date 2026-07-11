@@ -122,4 +122,4 @@ document.querySelectorAll(".btn-cart").forEach((button) => {
         tambahKeKeranjang(namaProduk, harga);
     });
 });
-localStorage.removeItem("cart");
+
