@@ -116,7 +116,7 @@ document.querySelectorAll(".btn-cart").forEach((button) => {
         const card = this.closest(".produk-card");
         const namaProduk = card.querySelector("h3").innerText;
 
-        const hargaText = card.querySelector(".harga").innerText;
+        const hargaText = card.querySelector(".harga-baru").innerText;
         const harga = parseInt(hargaText.replace(/[^0-9]/g, ""));
 
         tambahKeKeranjang(namaProduk, harga);
