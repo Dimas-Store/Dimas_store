@@ -107,3 +107,15 @@ function tambahKeKeranjang(namaProduk, harga) {
 
     alert(namaProduk + " berhasil ditambahkan ke keranjang.");
 }
+document.querySelectorAll(".btn-cart").forEach((button) => {
+    button.addEventListener("click", function () {
+
+        const card = this.closest(".produk-card");
+        const namaProduk = card.querySelector("h3").innerText;
+
+        const hargaText = card.querySelector(".harga").innerText;
+        const harga = parseInt(hargaText.replace(/[^0-9]/g, ""));
+
+        tambahKeKeranjang(namaProduk, harga);
+    });
+});
