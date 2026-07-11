@@ -39,11 +39,28 @@ if (slides.length > 0 && prev && next && dots.length > 0) {
 
 }
 
-const searchInput=document.getElementById("searchInput");
+const searchInput = document.getElementById("searchInput");
+const cards = document.querySelectorAll(".produk-card");
 
-const cards=document.querySelectorAll(".produk-card");
+if (searchInput) {
+    searchInput.addEventListener("keyup", () => {
 
-searchInput.addEventListener("keyup",()=>{
+        const keyword = searchInput.value.toLowerCase();
+
+        cards.forEach((card) => {
+
+            const nama = card.querySelector("h3").textContent.toLowerCase();
+
+            if (nama.includes(keyword)) {
+                card.style.display = "block";
+            } else {
+                card.style.display = "none";
+            }
+
+        });
+
+    });
+}
 
     const keyword=searchInput.value.toLowerCase();
 
