@@ -62,21 +62,7 @@ if (searchInput) {
     });
 }
 
-    const keyword=searchInput.value.toLowerCase();
-
-    cards.forEach((card)=>{
-
-        const nama=card.querySelector("h3").textContent.toLowerCase();
-
-        if(nama.includes(keyword)){
-            card.style.display="block";
-        }else{
-            card.style.display="none";
-        }
-
-    });
-
-});
+    
 const nomorWA = "62895385145700";
 
 document.querySelectorAll(".btn-beli").forEach(function(button){
