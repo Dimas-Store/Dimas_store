@@ -380,3 +380,29 @@ body{
     font-size:13px;
     font-weight:400;
 }
+.tentang{
+    background:#111;
+    color:#fff;
+    padding:40px 20px;
+    margin-top:30px;
+}
+
+.tentang h2{
+    text-align:center;
+    color:#ff2b2b;
+    margin-bottom:20px;
+    font-size:30px;
+}
+
+.tentang p{
+    color:#ddd;
+    line-height:1.9;
+    font-size:15px;
+    margin-bottom:15px;
+}
+
+.tentang i{
+    color:#ff2b2b;
+    width:25px;
+    margin-right:6px;
+}
